@@ -1,0 +1,39 @@
+.addNewUser {
+    text-align: center;
+    padding-top: 3%;
+    h2{
+        color: rgba(255, 255, 255, 0.768);
+        font-weight: bold;
+    }
+    form {
+        width: 30%;
+        margin: auto;
+        padding-top: 2%;
+        text-align: center;
+
+        input {
+            background-color: rgba(230, 230, 230, 0.563) !important;
+        }
+        select {
+            background-color: rgba(230, 230, 230, 0.563) !important;
+            color: rgb(85, 85, 85) !important;
+        }
+    }
+
+    input::placeholder {
+        color: rgb(85, 85, 85) !important;
+    }
+
+    .newUserBtn {
+        background-color: rgba(255, 255, 255, 0.464);
+        border: 2px solid rgb(165, 165, 165);
+        border-radius: 5px;
+        padding: 5px 50px 5px 50px;
+        color: rgb(85, 85, 85);
+    }
+    .newUserBtn:hover {
+        background-color: rgba(195, 195, 195, 0.562);
+        border: 2px solid rgba(253, 253, 253, 0.445);
+        color: white;
+    }
+}
