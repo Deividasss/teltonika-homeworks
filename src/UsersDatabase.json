@@ -207,6 +207,14 @@
             "age": 32,
             "gender": "Male",
             "city": "Butrimonys"
+        },
+        {
+            "id": 26,
+            "firstName": "Jurgita",
+            "lastName": "Kazlauskaitė",
+            "age": 22,
+            "gender": "Female",
+            "city": "Butrimonys"
         }
         
     ]
