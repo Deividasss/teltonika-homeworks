@@ -6,6 +6,7 @@ import Footer from './components/footer/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NewUser from './components/newUser/NewUser';
 import NewCategory from './components/newCategory/NewCategory';
+import UsersInfo from './components/UsersInfo/districts/UsersInfo';
 
 function App() {
   return (
@@ -18,11 +19,11 @@ function App() {
             <Route exact path='/' element={<MainPage />} />
             <Route exact path='/newUser' element={<NewUser />} />
             <Route exact path='/newCategory' element={<NewCategory />} />
+            <Route exact path='/usersInfo' element={<UsersInfo />} />
           </Route>
         </Routes>
+        <Footer />
       </Router >
-
-      <Footer />
     </>
   );
 }

@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
-ul {
+.navLinks {
     display: flex;
     flex-direction: column;
     list-style-type: none;
@@ -8,12 +8,12 @@ ul {
     height: 100%;
     position: fixed;
     width: 12%;
-    padding-top: 50px;
-    h4{
+    padding-top: 120px;
+    h4 {
         color: #3d3d3dc1;
     }
-    hr{
-        height: 2px!important;
+    hr {
+        height: 2px !important;
         background-color: #ffffff;
     }
     li {
@@ -45,6 +45,7 @@ ul {
             &:hover {
                 color: #b2b2b2;
                 cursor: pointer;
+                transform: rotate(4deg);
             }
 
             &:hover::after {
@@ -53,5 +54,26 @@ ul {
             }
         }
     }
+    .categoriesDropDown {
+        text-align: center;
+        background-color: rgba(148, 141, 141, 0.884);
+        border-radius: 10px;
+    }
+    .dropdownLinks {
+        text-decoration: none;
+        color: white;
+    }
+    .dropdownLinks:hover {
+        cursor: pointer;
+        color: #b2b2b2;
+    }
+    .dropTogle {
+        color: #ecf0f1;
+        text-transform: uppercase;
+        font-family: Lato, sans-serif;
+        &:hover {
+            color: #b2b2b2;
+            cursor: pointer;
+        }
+    }
 }
-

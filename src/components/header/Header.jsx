@@ -1,5 +1,5 @@
 import "../header/Header.scss"
-import {useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 const Header = () => {
 
@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <>
             <nav class="header">
-                <a class="headerLogo" onClick={()=>navigate('/')}>AppLogo</a>
+                <img class="headerLogo" src="https://teltonika-iot-group.com/images/branches/iot-white.svg" onClick={() => navigate('/')} alt="foto" />
             </nav>
         </>
     )

@@ -27,14 +27,15 @@ const NewUser = () => {
 
     const submitHandler = (e) => {
         e.preventDefault()
-        setMessages({ message: 'User successfully created', status: 'primary' })
+        setMessages({ message: 'User successfully created', status: 'success' })
         console.log(term)
     }
 
     return (
         <>
             <div className="addNewUser">
-                <h2>----------Add New User----------</h2>
+                <h2>----------Register New User----------</h2>
+                <h4><span>Here you can register new user and start to use our premium sevices</span></h4>
                 <form onSubmit={submitHandler}>
                     <Alert variant={messages.status}>{messages.message}</Alert>
                     <div className="row mb-4">
@@ -108,12 +109,12 @@ const NewUser = () => {
                             required
                             onChange={handleChange}>
                             <option value="">Select Category...</option>
-                            <option>Cars</option>
-                            <option>Bouts</option>
-                            <option>Planes</option>
+                            <option>Lithuania</option>
+                            <option>Poland</option>
+                            <option>Estonia</option>
                         </select>
                     </div>
-                    <button type="submit" className="newUserBtn">Add New User</button>
+                    <button type="submit" className="newUserBtn">REGISTER</button>
                 </form>
             </div>
         </>

@@ -1,0 +1,213 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "firstName": "Deividas",
+            "lastName": "Kašėta",
+            "age": 21,
+            "gender": "male",
+            "city": "Merkinė"
+        },
+        {
+            "id": 2,
+            "firstName": "Jonas",
+            "lastName": "Kupiškis",
+            "age": 31,
+            "gender": "Male",
+            "city": "Merkinė"
+        },
+        {
+            "id": 3,
+            "firstName": "Karolis",
+            "lastName": "Juniškis",
+            "age": 24,
+            "gender": "Male",
+            "city": "Merkinė"
+        },
+        {
+            "id": 4,
+            "firstName": "Laura",
+            "lastName": "Černiauskaitė",
+            "age": 29,
+            "gender": "Female",
+            "city": "Merkinė"
+        },
+        {
+            "id": 5,
+            "firstName": "Karolina",
+            "lastName": "Mikalonytė",
+            "age": 31,
+            "gender": "Female",
+            "city": "Valkininkai"
+        },
+        {
+            "id": 6,
+            "firstName": "Justas",
+            "lastName": "Mikalonis",
+            "age": 25,
+            "gender": "Male",
+            "city": "Valkininkai"
+        },
+        {
+            "id": 7,
+            "firstName": "Ignas",
+            "lastName": "Lukšys",
+            "age": 35,
+            "gender": "Male",
+            "city": "Valkininkai"
+        },
+        {
+            "id": 8,
+            "firstName": "Augustė",
+            "lastName": "Mikalonytė",
+            "age": 21,
+            "gender": "Female",
+            "city": "Varėna"
+        },
+        {
+            "id": 9,
+            "firstName": "Jonas",
+            "lastName": "Onušis",
+            "age": 45,
+            "gender": "Male",
+            "city": "Varėna"
+        },
+        {
+            "id": 10,
+            "firstName": "Juozas",
+            "lastName": "Juozapavičius",
+            "age": 41,
+            "gender": "Male",
+            "city": "Varėna"
+        },
+        {
+            "id": 11,
+            "firstName": "Petras",
+            "lastName": "Karakauskas",
+            "age": 31,
+            "gender": "Male",
+            "city": "Bingelių k."
+        },
+        {
+            "id": 12,
+            "firstName": "Justina",
+            "lastName": "Bubnelytė",
+            "age": 19,
+            "gender": "Female",
+            "city": "Bingelių k."
+        },
+        {
+            "id": 13,
+            "firstName": "Emilija",
+            "lastName": "Černiauskaitė",
+            "age": 28,
+            "gender": "Female",
+            "city": "Alytus"
+        },
+        {
+            "id": 14,
+            "firstName": "Julija",
+            "lastName": "Mikalonytė",
+            "age": 25,
+            "gender": "Female",
+            "city": "Alytus"
+        },
+        {
+            "id": 15,
+            "firstName": "Markas",
+            "lastName": "Baltulionis",
+            "age": 23,
+            "gender": "Male",
+            "city": "Alytus"
+        },
+        {
+            "id": 16,
+            "firstName": "Karolis",
+            "lastName": "Bernionis",
+            "age": 32,
+            "gender": "Male",
+            "city": "Alytus"
+        },
+        {
+            "id": 17,
+            "firstName": "Samanta",
+            "lastName": "Pigagaitė",
+            "age": 18,
+            "gender": "Female",
+            "city": "Daugai"
+        },
+        {
+            "id": 18,
+            "firstName": "Arnas",
+            "lastName": "Petrėnas",
+            "age": 24,
+            "gender": "Male",
+            "city": "Daugai"
+        },
+        {
+            "id": 19,
+            "firstName": "Karolina",
+            "lastName": "Dagilytė",
+            "age": 22,
+            "gender": "Female",
+            "city": "Daugai"
+        },
+        {
+            "id": 20,
+            "firstName": "Jonas",
+            "lastName": "Petrėnas",
+            "age": 22,
+            "gender": "Male",
+            "city": "Simnas"
+        },
+        {
+            "id": 21,
+            "firstName": "Karolis",
+            "lastName": "Dagilys",
+            "age": 29,
+            "gender": "Male",
+            "city": "Simnas"
+        },
+        {
+            "id": 22,
+            "firstName": "Justina",
+            "lastName": "Dagilytė",
+            "age": 21,
+            "gender": "Female",
+            "city": "Simnas"
+        },
+        {
+            "id": 23,
+            "firstName": "Juozas",
+            "lastName": "Dagilys",
+            "age": 22,
+            "gender": "Male",
+            "city": "Butrimonys"
+        },
+        {
+            "id": 24,
+            "firstName": "Milda",
+            "lastName": "Mikalonytė",
+            "age": 24,
+            "gender": "Female",
+            "city": "Butrimonys"
+        },
+        {
+            "id": 25,
+            "firstName": "Silvija",
+            "lastName": "Karolytė",
+            "age": 21,
+            "gender": "Female",
+            "city": "Butrimonys"
+        },
+        {
+            "id": 26,
+            "firstName": "Justas",
+            "lastName": "Petrėnas",
+            "age": 32,
+            "gender": "Male",
+            "city": "Butrimonys"
+        }
+        
+    ]
+}

@@ -22,8 +22,7 @@ const Footer = () => {
                     </section>
                 </div>
                 <div class="text-center p-3">
-                    © 2022 Copyright:
-                    <a class="text-white" href="#"> Front-EndTask.com</a>
+                    COPYRIGHT © TELTONIKA, 2022
                 </div>
             </footer>
         </>
