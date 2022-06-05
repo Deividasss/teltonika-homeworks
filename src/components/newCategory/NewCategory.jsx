@@ -1,100 +1,158 @@
 import "../newCategory/NewCategory.scss"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Alert } from "react-bootstrap"
 import React from 'react';
 
-class NewCategory extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            countries: [],
-            states: [],
-            cities: [],
-            selectedCountry: 'Country',
-            selectedState: 'State'
-        };
-        this.changeCountry = this.changeCountry.bind(this);
-        this.changeState = this.changeState.bind(this);
+const NewCategory = () => {
+
+    const countries = [
+        { id: "1", name: "Lithuania" },
+        { id: "2", name: "Poland" },
+        { id: "3", name: "Estonia" }
+    ]
+
+    const districts = [
+        { id: "1", countryId: "1", name: "Varena r.sav" },
+        { id: "2", countryId: "1", name: "Alytus r.sav" },
+        { id: "3", countryId: "2", name: "Lesser Poland" },
+        { id: "4", countryId: "2", name: "Silesia" },
+        { id: "5", countryId: "3", name: "Harju" },
+        { id: "6", countryId: "3", name: "Hiiu" },
+
+    ]
+    const cities = [
+        { id: "1", districtId: "1", name: "Merkinė" },
+        { id: "2", districtId: "1", name: "Valkininkai" },
+        { id: "3", districtId: "1", name: "Varėna" },
+        { id: "4", districtId: "1", name: "Bingelių k." },
+        { id: "1", districtId: "2", name: "Alytus" },
+        { id: "2", districtId: "2", name: "Daugai" },
+        { id: "3", districtId: "2", name: "Simnas" },
+        { id: "4", districtId: "2", name: "Butrimonys" },
+        { id: "1", districtId: "3", name: "Krakow" },
+        { id: "2", districtId: "3", name: "Gdansk" },
+        { id: "3", districtId: "3", name: "Bakersfield" },
+        { id: "4", districtId: "3", name: "Carson" },
+        { id: "1", districtId: "4", name: "Tallahassee" },
+        { id: "2", districtId: "4", name: "Jacksonville" },
+        { id: "1", districtId: "5", name: "Tallinn" },
+        { id: "2", districtId: "5", name: "Paide" },
+        { id: "3", districtId: "5", name: "Polva" },
+        { id: "4", districtId: "5", name: "Tartu" },
+        { id: "1", districtId: "6", name: "Saare" },
+        { id: "2", districtId: "6", name: "Rapla" },
+        { id: "3", districtId: "6", name: "Parnu" },
+
+    ]
+
+    const [country, setCountry] = useState([])
+    const [district, setDistrict] = useState([])
+    const [city, setCity] = useState([])
+    const [messages, setMessages] = useState({ message: '', status: '' })
+    const [term, setTerm] = useState({
+        'Country': '',
+        'District': '',
+        'City': '',
+    })
+
+    const handleChange = (e) => {
+        setTerm({
+            ...term,
+            [e.target.name]: e.target.value
+        })
     }
 
-    componentDidMount() {
-        this.setState({
-            countries: [
-                {
-                    name: 'Lithuania', states: [
-                        { name: 'Varėna r.sav.', cities: ['Merkinė', 'Valkininkai', 'Varėna', 'Bingelių k.'] },
-                        { name: 'Alytus r.sav.', cities: ['Alytus', 'Daugai', 'Simnas', 'Butrimonys'] }
-                    ]
-                },
-                {
-                    name: 'Poland', states: [
-                        { name: 'Lesser Poland', cities: ['Krakow', 'Gdansk', 'Bakersfield', 'Carson'] },
-                        { name: 'Silesia', cities: ['Tallahassee', 'Jacksonville'] },
-                    ]
-                },
-                {
-                    name: 'Estonia', states: [
-                        { name: 'Harju', cities: ['Tallinn', 'Paide', 'Polva', 'Carson'] },
-                        { name: 'Hiiu', cities: ['Saare', 'Rapla', 'Parnu'] },
-                    ]
-                },
-
-
-            ]
-        });
+    const submitHandler = (e) => {
+        e.preventDefault()
+        setMessages({ message: 'Category successfully created', status: 'success' })
+        console.log(term)
     }
 
+    useEffect(() => {
+        setCountry(countries)
+    }, [])
 
-    changeCountry(event) {
-        this.setState({ selectedCountry: event.target.value });
-        this.setState({ states: this.state.countries.find(cntry => cntry.name === event.target.value).states });
+    const handleCountry = (id) => {
+        const dt = districts.filter(x => x.countryId === id)
+        setDistrict(dt)
     }
 
-    changeState(event) {
-        this.setState({ selectedState: event.target.value });
-        const stats = this.state.countries.find(cntry => cntry.name === this.state.selectedCountry).states;
-        this.setState({ cities: stats.find(stat => stat.name === event.target.value).cities });
+    const handleDistrict = (id) => {
+        const dt = cities.filter(x => x.districtId === id)
+        setCity(dt)
     }
-
-    render() {
-        return (
+    return (
+        <>
             <div className="createCategory">
                 <h2>----------Create New Category----------</h2>
-                <form>
-                    <div className="row">
-                        <div className="form-outline mb-4">
-                            <select className="form-select" required placeholder="Country" value={this.state.selectedCountry} onChange={this.changeCountry}>
-                                <option value=''>Country</option>
-                                {this.state.countries.map((e, key) => {
-                                    return <option key={key}>{e.name}</option>;
-                                })}
-                            </select>
-                        </div>
-
-                        <div className="form-outline mb-4">
-                            <select className="form-select" required placeholder="State" value={this.state.selectedState} onChange={this.changeState}>
-                                <option value=''>District</option>
-                                {this.state.states.map((e, key) => {
-                                    return <option key={key}>{e.name}</option>;
-                                })}
-                            </select>
-                        </div>
-
-                        <div className="form-outline mb-4">
-                            <select className="form-select" required placeholder="City">
-                                <option value=''>City</option>
-                                {this.state.cities.map((e, key) => {
-                                    return <option key={key}>{e}</option>;
-                                })}
-                            </select>
-                        </div>
+                <h4><span>Here you can create new category</span></h4>
+            <form onSubmit={submitHandler}>
+                <Alert variant={messages.status}>{messages.message}</Alert>
+                <div className="row">
+                    <div className="form-outline mb-4">
+                        <select
+                            className="form-control"
+                            name="Country"
+                            onChange={(e) => { handleCountry(e.target.value); handleChange(e) }}
+                            required>
+                            <option value="">Select Country</option>
+                            {
+                                country &&
+                                    country !== undefined ?
+                                    country.map((ctr, index) => {
+                                        return (
+                                            <option key={index} value={ctr.id}>{ctr.name}</option>
+                                        )
+                                    })
+                                    : "No Country"
+                            }
+                        </select>
                     </div>
-                    <button type="submit" className="createCategoryBtn">Submit</button>
-                </form>
-            </div>
-
-        )
-    }
+                    <div className="form-outline mb-4">
+                        <select
+                            className="form-control"
+                            name="District"
+                            onChange={(e) => { handleDistrict(e.target.value); handleChange(e) }}
+                            required
+                        >
+                            <option value="">Select District</option>
+                            {
+                                district &&
+                                    district !== undefined ?
+                                    district.map((ctr, index) => {
+                                        return (
+                                            <option key={index} value={ctr.id}>{ctr.name}</option>
+                                        )
+                                    })
+                                    : "No District"
+                            }
+                        </select>
+                    </div>
+                    <div className="form-outline mb-4">
+                        <select
+                            className="form-control"
+                            name="City"
+                            onChange={handleChange}
+                            required
+                        >
+                            <option value="">Select City</option>
+                            {
+                                city &&
+                                    city !== undefined ?
+                                    city.map((ctr, index) => {
+                                        return (
+                                            <option key={index} value={ctr.id}>{ctr.name}</option>
+                                        )
+                                    })
+                                    : "No City"
+                            }
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" className="createCategoryBtn">SUBMIT</button>
+            </form>
+        </div >
+        </>
+    )
 }
-
 export default NewCategory;

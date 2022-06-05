@@ -35,7 +35,7 @@ const MainPage = () => {
                         <img className="headerImg" src="https://teltonika-iot-group.com/images/branches/iot-white.svg" alt="foto" />
                         <h2>We want our customers <br /> to be happy</h2>
                         <p>Every customer is important to us, so we ensure that our services meet their requirements. <br />
-                            We provide our services throughout Europe and work with some of the largest companies</p>
+                            We provide our services throughout Europe and work with some of the largest companies.</p>
                     </div>
                 </header>
                 <div class="section1">
@@ -43,8 +43,8 @@ const MainPage = () => {
                         <h2>ABOUT US</h2>
                         <h3><span> WHO WE ARE</span></h3>
                     </div>
-                    <p class="paragraph1">We are Teltonika IoT Group, the company group that develops exceptional Internet of Things solutions for the global market. More than 16 million IoT devices, designed in our Lithuanian offices and manufactured in our modern production facilities, are already connected to the Internet.</p>
                     <img className="section1Img" src="http://christinemakellams.com/wp-content/uploads/2016/10/Happy-woman-Fotolia_12331389_Subscription_XXL-982x842.jpg" alt="foto" />
+                    <p class="paragraph1">We are Teltonika IoT Group, the company group that develops exceptional Internet of Things solutions for the global market. More than 16 million IoT devices, designed in our Lithuanian offices and manufactured in our modern production facilities, are already connected to the Internet. <br></br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sunt assumenda quis. Quibusdam, illo! Blanditiis rem natus alias quos. Vel, totam. Consectetur assumenda earum reiciendis ullam reprehenderit, libero architecto ratione! <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quas molestias nisi accusamus hic dolores, aliquid voluptatibus vel eligendi? Quas suscipit tempore expedita? <br></br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, laboriosam. Incidunt earum, excepturi obcaecati accusantium placeat</p>
                 </div>
                 <div className="someFacts">
                     <div class="header_facts">

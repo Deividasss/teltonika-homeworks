@@ -45,7 +45,6 @@
             &:hover {
                 color: #b2b2b2;
                 cursor: pointer;
-                transform: rotate(4deg);
             }
 
             &:hover::after {
@@ -56,7 +55,7 @@
     }
     .categoriesDropDown {
         text-align: center;
-        background-color: rgba(148, 141, 141, 0.884);
+        background-color: rgba(148, 141, 141, 0.436);
         border-radius: 10px;
     }
     .dropdownLinks {

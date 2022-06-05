@@ -19,13 +19,9 @@ const Nav = () => {
                     <Dropdown>
                         <Dropdown.Toggle className="dropTogle" variant="none" id="dropdown-autoclose-true" >Users Info</Dropdown.Toggle>
                         <Dropdown.Menu className="categoriesDropDown">
-                            <Dropdown>
-                                <Dropdown.Toggle className="dropTogle" variant="none" >Lithuania</Dropdown.Toggle>
-                                <Dropdown.Menu className="categoriesDropDown">
-                                <li><a className="dropdownLinks" onClick={() => navigate('/usersInfo')}>Varena r.sav.</a></li>
-                                <li><a className="dropdownLinks" onClick={() => navigate('/newUser')}>Alytus r.sav.</a></li>
-                                </Dropdown.Menu>
-                            </Dropdown>
+                            <li><a className="dropdownLinks" onClick={() => navigate('/lithuania')}>Lithuania</a></li>
+                            <li><a className="dropdownLinks" onClick={() => navigate('/poland')}>Poland</a></li>
+                            <li><a className="dropdownLinks" onClick={() => navigate('/estonia')}>Estonia</a></li>
                         </Dropdown.Menu>
                     </Dropdown>
                 </ul>

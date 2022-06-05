@@ -108,7 +108,7 @@ const NewUser = () => {
                             name="Category"
                             required
                             onChange={handleChange}>
-                            <option value="">Select Category...</option>
+                            <option value="">Select Country...</option>
                             <option>Lithuania</option>
                             <option>Poland</option>
                             <option>Estonia</option>

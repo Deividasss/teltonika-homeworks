@@ -1,11 +1,11 @@
 import UsersData from "../../../UsersDatabase"
 import { Form, Table } from "react-bootstrap"
 import { useState } from "react"
-import "../districts/Users.scss"
+import "../countrys/Users.scss"
 import UserTable from "../userTable/UserTable"
 
 
-const UsersInfo = () => {
+const Estonia = () => {
 
     const [search, setSearch] = useState('')
     const [users, setUsers] = useState(UsersData)
@@ -17,23 +17,22 @@ const UsersInfo = () => {
     return (
         <>
             <div className="usersInfo">
-                <h2>----------Users Information----------</h2>
+                <h2>----------Estonia Users Information----------</h2>
                 <h4><span>Select the city whose users you want to see</span></h4>
                 <Form>
                     <Form.Select
                         onChange={handleChange}
                         className="usersSelect">
                         <option>Select City</option>
-                        <optgroup label="Varėna r.sav."></optgroup>
-                        <option>Merkinė</option>
-                        <option>Valkininkai</option>
-                        <option>Varėna</option>
-                        <option>Bingelių k.</option>
-                        <optgroup label="Alytus r.sav."></optgroup>
-                        <option>Alytus</option>
-                        <option>Daugai</option>
-                        <option>Simnas</option>
-                        <option>Butrimonys</option>
+                        <optgroup label="Harju"></optgroup>
+                        <option>Tallinn</option>
+                        <option>Paide</option>
+                        <option>Polva</option>
+                        <option>Tartu</option>
+                        <optgroup label="Hiiu"></optgroup>
+                        <option>Saare</option>
+                        <option>Rapla</option>
+                        <option>Parnu</option>
                     </Form.Select>
                 </Form>
                 <div className="usersTable">
@@ -73,4 +72,4 @@ const UsersInfo = () => {
     )
 }
 
-export default UsersInfo
+export default Estonia

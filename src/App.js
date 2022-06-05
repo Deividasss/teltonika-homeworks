@@ -6,7 +6,9 @@ import Footer from './components/footer/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NewUser from './components/newUser/NewUser';
 import NewCategory from './components/newCategory/NewCategory';
-import UsersInfo from './components/UsersInfo/districts/UsersInfo';
+import Lithuania from './components/UsersInfo/countrys/Lithuania';
+import Poland from './components/UsersInfo/countrys/Poland';
+import Estonia from './components/UsersInfo/countrys/Estonia';
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
             <Route exact path='/' element={<MainPage />} />
             <Route exact path='/newUser' element={<NewUser />} />
             <Route exact path='/newCategory' element={<NewCategory />} />
-            <Route exact path='/usersInfo' element={<UsersInfo />} />
+            <Route exact path='/lithuania' element={<Lithuania />} />
+            <Route exact path='/poland' element={<Poland />} />
+            <Route exact path='/estonia' element={<Estonia />} />
           </Route>
         </Routes>
         <Footer />
