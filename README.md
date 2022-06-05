@@ -12,7 +12,7 @@ In the project directory, you can run:
 ### - Send Us Message (Can be found at Main Page last section)
 ### - Create New User Page
 ### - Create New Category Page
-### - Users Info page where You can filter all registered Users by citys in which they live
+### - Users Info page where You can filter all registered users by citys in which they live
 
 ## Additional information 
 
