@@ -18,4 +18,4 @@ In the project directory, you can run:
 
 ### After forms submission all data will be stored in useState (If you want form data to be saved on a server, you would need to add a mysql or nosql server)
 ### All users information are hardcoded at UsersDatabase.json file
-### Unfortinaly no responsive design, project was created using computer monitor if You try to use it with laptop or phone all design may fall apart
+### Unfortinaly no responsive design
