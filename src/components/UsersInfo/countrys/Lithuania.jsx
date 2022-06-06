@@ -17,7 +17,21 @@ const Lithuania = () => {
     return (
         <>
             <div className="usersInfo">
-                <h2>---------- Lithuania Users Information----------</h2>
+                <div class="card">
+                    <div class="card_part card_part-one">
+                        <img src="https://teltonika-iot-group.com/images/branches/iot-white.svg" alt="foto" />
+                    </div>
+                    <div class="card_part card_part-two">
+                        <img src="https://teltonika-iot-group.com/images/branches/iot-white.svg" alt="foto" />
+                    </div>
+                    <div class="card_part card_part-three">
+                        <img src="https://teltonika-iot-group.com/images/branches/iot-white.svg" alt="foto" />
+                    </div>
+                    <div class="card_part card_part-four">
+                        <img src="https://teltonika-iot-group.com/images/branches/iot-white.svg" alt="foto" />
+                    </div>
+                </div>
+                <h2>---------- <img className="countryImg" src="https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg" alt="foto" /> Lithuania Users Information <img className="countryImg" src="https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg" alt="foto" /> ----------</h2>
                 <h4><span>Select the city whose users you want to see</span></h4>
                 <Form>
                     <Form.Select

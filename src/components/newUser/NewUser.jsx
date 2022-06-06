@@ -34,6 +34,20 @@ const NewUser = () => {
     return (
         <>
             <div className="addNewUser">
+                <div class="card">
+                    <div class="card_part card_part-one">
+                        <img src="https://teltonika-iot-group.com/images/branches/iot-white.svg" alt="foto" />
+                    </div>
+                    <div class="card_part card_part-two">
+                        <img src="https://teltonika-iot-group.com/images/branches/iot-white.svg" alt="foto" />
+                    </div>
+                    <div class="card_part card_part-three">
+                        <img src="https://teltonika-iot-group.com/images/branches/iot-white.svg" alt="foto" />
+                    </div>
+                    <div class="card_part card_part-four">
+                        <img src="https://teltonika-iot-group.com/images/branches/iot-white.svg" alt="foto" />
+                    </div>
+                </div>
                 <h2>----------Register New User----------</h2>
                 <h4><span>Here you can register new user and start to use our premium sevices</span></h4>
                 <form onSubmit={submitHandler}>

@@ -84,74 +84,88 @@ const NewCategory = () => {
     return (
         <>
             <div className="createCategory">
-                <h2>----------Create New Category----------</h2>
-                <h4><span>Here you can create new category</span></h4>
-            <form onSubmit={submitHandler}>
-                <Alert variant={messages.status}>{messages.message}</Alert>
-                <div className="row">
-                    <div className="form-outline mb-4">
-                        <select
-                            className="form-control"
-                            name="Country"
-                            onChange={(e) => { handleCountry(e.target.value); handleChange(e) }}
-                            required>
-                            <option value="">Select Country</option>
-                            {
-                                country &&
-                                    country !== undefined ?
-                                    country.map((ctr, index) => {
-                                        return (
-                                            <option key={index} value={ctr.id}>{ctr.name}</option>
-                                        )
-                                    })
-                                    : "No Country"
-                            }
-                        </select>
+                <div class="card">
+                    <div class="card_part card_part-one">
+                        <img src="https://teltonika-iot-group.com/images/branches/iot-white.svg" alt="foto" />
                     </div>
-                    <div className="form-outline mb-4">
-                        <select
-                            className="form-control"
-                            name="District"
-                            onChange={(e) => { handleDistrict(e.target.value); handleChange(e) }}
-                            required
-                        >
-                            <option value="">Select District</option>
-                            {
-                                district &&
-                                    district !== undefined ?
-                                    district.map((ctr, index) => {
-                                        return (
-                                            <option key={index} value={ctr.id}>{ctr.name}</option>
-                                        )
-                                    })
-                                    : "No District"
-                            }
-                        </select>
+                    <div class="card_part card_part-two">
+                        <img src="https://teltonika-iot-group.com/images/branches/iot-white.svg" alt="foto" />
                     </div>
-                    <div className="form-outline mb-4">
-                        <select
-                            className="form-control"
-                            name="City"
-                            onChange={handleChange}
-                            required
-                        >
-                            <option value="">Select City</option>
-                            {
-                                city &&
-                                    city !== undefined ?
-                                    city.map((ctr, index) => {
-                                        return (
-                                            <option key={index} value={ctr.id}>{ctr.name}</option>
-                                        )
-                                    })
-                                    : "No City"
-                            }
-                        </select>
+                    <div class="card_part card_part-three">
+                        <img src="https://teltonika-iot-group.com/images/branches/iot-white.svg" alt="foto" />
+                    </div>
+                    <div class="card_part card_part-four">
+                        <img src="https://teltonika-iot-group.com/images/branches/iot-white.svg" alt="foto" />
                     </div>
                 </div>
-                <button type="submit" className="createCategoryBtn">SUBMIT</button>
-            </form>
-        </div >
+                <h2>----------Create New Category----------</h2>
+                <h4><span>Here you can create new category</span></h4>
+                <form onSubmit={submitHandler}>
+                    <Alert variant={messages.status}>{messages.message}</Alert>
+                    <div className="row">
+                        <div className="form-outline mb-4">
+                            <select
+                                className="form-control"
+                                name="Country"
+                                onChange={(e) => { handleCountry(e.target.value); handleChange(e) }}
+                                required>
+                                <option value="">Select Country</option>
+                                {
+                                    country &&
+                                        country !== undefined ?
+                                        country.map((ctr, index) => {
+                                            return (
+                                                <option key={index} value={ctr.id}>{ctr.name}</option>
+                                            )
+                                        })
+                                        : "No Country"
+                                }
+                            </select>
+                        </div>
+                        <div className="form-outline mb-4">
+                            <select
+                                className="form-control"
+                                name="District"
+                                onChange={(e) => { handleDistrict(e.target.value); handleChange(e) }}
+                                required
+                            >
+                                <option value="">Select District</option>
+                                {
+                                    district &&
+                                        district !== undefined ?
+                                        district.map((ctr, index) => {
+                                            return (
+                                                <option key={index} value={ctr.id}>{ctr.name}</option>
+                                            )
+                                        })
+                                        : "No District"
+                                }
+                            </select>
+                        </div>
+                        <div className="form-outline mb-4">
+                            <select
+                                className="form-control"
+                                name="City"
+                                onChange={handleChange}
+                                required
+                            >
+                                <option value="">Select City</option>
+                                {
+                                    city &&
+                                        city !== undefined ?
+                                        city.map((ctr, index) => {
+                                            return (
+                                                <option key={index} value={ctr.id}>{ctr.name}</option>
+                                            )
+                                        })
+                                        : "No City"
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" className="createCategoryBtn">SUBMIT</button>
+                </form>
+            </div >
         </>
     )
 }
